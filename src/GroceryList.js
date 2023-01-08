@@ -12,7 +12,7 @@ export class GroceryList extends Component{
     }
 
     addItem(input){
-        if(input===""){
+        if(input===''){
             alert("Please enter an item")
         } else{
         let listArray = this.state.groceryList;
@@ -55,7 +55,7 @@ export class GroceryList extends Component{
                 <ul>
                     {this.state.groceryList.map((item,index) =>(
                         <li onClick={this.crossedWord} key={index}>
-                        <img src={check} width="40px"/>
+                        <img src={check} width="40px" alt="check-box"/>
                             {item}
                             </li>
                             ))}
